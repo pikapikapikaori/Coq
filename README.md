@@ -101,3 +101,21 @@ Theorem rev_involutive : ∀ X : Type, ∀ l : list X,
 Proof.
   (* FILL IN HERE *) Admitted.
 ```
+## Quiz.     
+Class quizes.
+
+### Quiz 1
+编写二次方函数。
+### Quiz 2
+```coq
+Definition bag := natlist.
+Fixpoint  count ( v :  nat) ( s :  bag) :  nat 
+   (* REPLACE THIS LINE WITH ":= _your_definition_ ." *).  Admitted.
+All these proofs can be done just by   reflexivity.
+Example  test_count1:  count 1  [1 ;2 ;3 ;1 ;4 ;1 ]  = 3. 
+  (* FILL IN HERE *)  Admitted. 
+Example  test_count2:  count 6  [1 ;2 ;3 ;1 ;4 ;1 ]  = 0. 
+  (* FILL IN HERE *)  Admitted.
+```
+### Quiz 3
+Define type ListOfNatlists whose elements are natlists.
