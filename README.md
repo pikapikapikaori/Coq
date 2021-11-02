@@ -4,7 +4,7 @@
 Coq class projects. 
      
 ## Homework.     
-CoqHomework
+Coq homework
 ### Homework 3
 定义名为Z2的类型，其含zero和one，定义其上模2加法，用+表示，并证明下式。
 ```coq
