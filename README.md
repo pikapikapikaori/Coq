@@ -101,6 +101,10 @@ Theorem rev_involutive : ∀ X : Type, ∀ l : list X,
 Proof.
   (* FILL IN HERE *) Admitted.
 ```
+### Homework 8
+
+sf-exercise chapter 1-5.
+
 ## Quiz.     
 Class quizes.
 
@@ -119,3 +123,7 @@ Example  test_count2:  count 6  [1 ;2 ;3 ;1 ;4 ;1 ]  = 0.
 ```
 ### Quiz 3
 Define type ListOfNatlists whose elements are natlists.
+
+## sf-exercise       
+
+My solution for https://softwarefoundations.cis.upenn.edu
