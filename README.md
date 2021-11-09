@@ -105,6 +105,38 @@ Proof.
 
 sf-exercise chapter 1-5.
 
+### Homework 9
+
+1. 
+```coq
+Theorem or_commut : forall P Q : Prop,  P \/ Q  -> Q \/ P.
+Proof.  (* FILL IN HERE *) Admitted.
+```
+
+2. 
+```coq
+Theorem not_both_true_and_false : ∀ P : Prop,
+  ¬ (P ∧ ¬P).
+Proof.
+  (* FILL IN HERE *) Admitted.
+```
+
+3. 
+```coq
+Theorem or_distributes_over_and : ∀ P Q R : Prop,
+  P ∨ (Q ∧ R) -> (P ∨ Q) ∧ (P ∨ R).
+Proof.
+  (* FILL IN HERE *) Admitted.
+```
+
+4. 
+```coq
+Theorem or_distributes_over_and' : ∀ P Q R : Prop,
+  (P ∨ Q) ∧ (P ∨ R) -> P ∨ (Q ∧ R).
+Proof.
+  (* FILL IN HERE *) Admitted.
+```
+
 ## Quiz.     
 Class quizes.
 
