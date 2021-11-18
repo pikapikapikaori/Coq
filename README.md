@@ -137,6 +137,30 @@ Proof.
   (* FILL IN HERE *) Admitted.
 ```
 
+### Homework 10
+
+```coq
+Theorem In_app_iff : ∀ A l l' (a:A),
+  In a (l++l') ↔ In a l ∨ In a l'.
+Proof.
+  intros A l. induction l as [|a' l' IH].
+  (* FILL IN HERE *) Admitted.
+```
+
+Recall that functions returning propositions can be seen as   properties  of their arguments. For instance, if    P  has type  nat    →   Prop, then    P    n  states that property    P  holds of    n.
+Drawing inspiration from    In, write a recursive function    All  stating that some property    P  holds of all elements of a list    l. To make sure your definition is correct, prove the    All_In  lemma below. (Of course, your definition should   notjust restate the left-hand side of    All_In.)  
+
+```coq
+Fixpoint   All  { T  :   Type} ( P  :   T   →   Prop) ( l  :   list   T) :   Prop 
+   (* REPLACE THIS LINE WITH ":= _your_definition_ ." *).   Admitted. 
+Theorem   All_In  : 
+   ∀   T  ( P  :   T   →   Prop) ( l  :   list   T), 
+     ( ∀   x,   In   x   l   →   P   x )   ↔ 
+     All   P   l. 
+Proof. 
+   (* FILL IN HERE *)   Admitted.
+```
+
 ## Quiz.     
 Class quizes.
 
