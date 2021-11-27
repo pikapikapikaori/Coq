@@ -139,6 +139,7 @@ Proof.
 
 ### Homework 10
 
+1. 
 ```coq
 Theorem In_app_iff : ∀ A l l' (a:A),
   In a (l++l') ↔ In a l ∨ In a l'.
@@ -147,6 +148,7 @@ Proof.
   (* FILL IN HERE *) Admitted.
 ```
 
+2. 
 Recall that functions returning propositions can be seen as   properties  of their arguments. For instance, if    P  has type  nat    →   Prop, then    P    n  states that property    P  holds of    n.
 Drawing inspiration from    In, write a recursive function    All  stating that some property    P  holds of all elements of a list    l. To make sure your definition is correct, prove the    All_In  lemma below. (Of course, your definition should   notjust restate the left-hand side of    All_In.)  
 
@@ -159,6 +161,34 @@ Theorem   All_In  :
      All   P   l. 
 Proof. 
    (* FILL IN HERE *)   Admitted.
+```
+
+### Homework 11
+
+1. Inductively define a relation CE such that (CE m n) holds iff m and n are two consecutive even numbers with m smaller than n.
+```coq
+Example test_CE : CE 4 6.
+Proof. (* Fill in here *) Admitted.
+```
+
+2. 
+```coq
+Theorem CE_SS : forall n m, CE (S (S n)) (S (S m)) -> CE n m.
+Proof. (* Fill in here *) Admitted.
+```
+
+3. 
+```coq
+Theorem ev_sum : ∀ n m, ev n → ev m → ev (n + m).
+Proof.
+  (* FILL IN HERE *) Admitted.
+```
+
+4. 
+```coq
+Lemma le_trans : ∀ m n o, m ≤ n → n ≤ o → m ≤ o.
+Proof.
+  (* FILL IN HERE *) Admitted.
 ```
 
 ## Quiz.     
