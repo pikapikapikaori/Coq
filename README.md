@@ -191,6 +191,31 @@ Proof.
   (* FILL IN HERE *) Admitted.
 ```
 
+### Homework 12
+
+1. Prove the following theorem. Hint: You may find the theorem eqb_string_false_iff in the textbook useful.
+```coq
+Theorem t_update_neq : ∀ (A : Type) (m : total_map A) x1 x2 v,
+  x1 ≠ x2 →
+  (x1 !-> v ; m) x2 = m x2.
+Proof.
+  (* FILL IN HERE *) Admitted.
+```
+
+2. Prove the following lemma. Hint: You may use functional_extensionality from the Coq library.
+```coq
+Lemma t_update_shadow : ∀ (A : Type) (m : total_map A) x v1 v2,
+  (x !-> v2 ; x !-> v1 ; m) = (x !-> v2 ; m).
+Proof.
+  (* FILL IN HERE *) Admitted.
+```
+
+3. Construct a proof object for the following proposition. 
+```coq
+Definition conj_disj : forall P Q R, P /\ (Q \/ R) -> (P /\ Q) \/ (P /\ R)
+(* REPLACE THIS LINE WITH ":= _your_definition_ ." *) . Admitted.
+```
+
 ## Quiz.     
 Class quizes.
 
