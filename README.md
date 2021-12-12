@@ -215,6 +215,36 @@ Proof.
 Definition conj_disj : forall P Q R, P /\ (Q \/ R) -> (P /\ Q) \/ (P /\ R)
 (* REPLACE THIS LINE WITH ":= _your_definition_ ." *) . Admitted.
 ```
+### Homework 13
+
+1. Complete this proof without using the induction tactic. 
+```coq
+Theorem   plus_one_r'  :   ∀   n: nat, 
+   n   +  1   =   S   n. 
+Proof. 
+   (* FILL IN HERE *)   Admitted.
+```
+
+2. Show that the   empty_relation defined in (an exercise in)  IndProp is a partial function. 
+```coq
+(* FILL IN HERE *)
+```
+
+3.  
+```coq
+Theorem   le_Sn_n  :  ∀   n , 
+   ¬   ( S   n   ≤   n ) . 
+Proof . 
+   (* FILL IN HERE *)   Admitted .
+```
+
+4. 
+```coq
+Theorem   le_antisymmetric  : 
+   antisymmetric   le . 
+Proof . 
+   (* FILL IN HERE *)   Admitted .
+```
 
 ## Quiz.     
 Class quizes.
