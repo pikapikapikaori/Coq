@@ -215,6 +215,7 @@ Proof.
 Definition conj_disj : forall P Q R, P /\ (Q \/ R) -> (P /\ Q) \/ (P /\ R)
 (* REPLACE THIS LINE WITH ":= _your_definition_ ." *) . Admitted.
 ```
+
 ### Homework 13
 
 1. Complete this proof without using the induction tactic. 
@@ -244,6 +245,17 @@ Theorem   le_antisymmetric  :
    antisymmetric   le . 
 Proof . 
    (* FILL IN HERE *)   Admitted .
+```
+
+### Homework 14
+1. Since the   optimize_0plus  transformation doesn't change the value of   aexps, we should be able to apply it to all the   aexps that appear in a   bexp  without changing the   bexp's value. Write a function that performs this transformation on   bexps and prove it is sound. Use the tacticals we've learned to make the proof as elegant as possible.  
+```coq
+Fixpoint   optimize_0plus_b  ( b  :   bexp) :   bexp 
+   (* REPLACE THIS LINE WITH ":= _your_definition_ ." *).   Admitted. 
+Theorem   optimize_0plus_b_sound  :   ∀   b, 
+   beval  ( optimize_0plus_b   b)  =   beval   b. 
+Proof. 
+   (* FILL IN HERE *)   Admitted.
 ```
 
 ## Quiz.     
